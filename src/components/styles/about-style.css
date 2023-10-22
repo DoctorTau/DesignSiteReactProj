@@ -1,0 +1,83 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+
+  grid-template-areas:
+    "A A A A A W T T T T N N"
+    "Z Z Z Z Z Z X X V V V V";
+
+  margin-top: 120px;
+}
+
+.about-title {
+  grid-area: A;
+}
+
+.about-title > h2 {
+  /* Text */
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* title/h2 */
+  font-family: Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+
+  margin-top: 0px;
+}
+
+.about-text {
+  grid-area: T;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text > p {
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+  /* text/normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  text-align: left;
+
+}
+
+.about-subtext {
+  grid-area: X;
+}
+
+.about-subtitle {
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* title/h3 */
+  font-family: Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+
+}
+
+.about-subtext-item > p {
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* text/normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  text-align: left;
+
+}

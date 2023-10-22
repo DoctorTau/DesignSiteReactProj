@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  margin: 12px;
+
+  justify-content: space-between;
+
+  width: auto;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+  width: 30%;
+}
+
+.menu {
+  display: inline-flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 8px;
+  height: auto;
+}
+
+/* For all a in class .menu disable underline and bue color */
+.menu > a {
+  text-decoration: none;
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.number {
+  color: var(--text-main, #212529);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
